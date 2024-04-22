@@ -22,17 +22,17 @@ fs.readFile('./tax.csv', (err, data) => {
 		});
 		// console.log(cleanData);
 		cleanData.forEach((cd) => {
+			if (cd['PARCELID'].slice(0,3) != 'R72') return;
 			if (cd['LUC'].length !== 3) return;
 			if (cd['LUC'][0] !== '5') return;
 			const rec = {};
 			rec['PARCELID'] = cd['PARCELID'];
-			rec['OWNERNAME1'] = cd['OWNERNAME1'];
-			rec['OWNERNAME2'] = cd['OWNERNAME2'];
+			rec['OWNERNAME'] = cd['OWNERNAME1'] + ' ' + cd['OWNERNAME2'];
 			rec['NBHD'] = cd['NBHD'];
 			rec['LUC'] = cd['LUC'];
-			rec['HLF1DELQ'] = cd['HLF1DELQ'];
-			rec['PARCEL LOCATION ZIP'] = cd['PARCEL LOCATION ZIP'];
-			rec['PARCELLOCATION'] = cd['PARCELLOCATION'];
+			rec['HLF1DELQ'] = parseFloat(cd['HLF1DELQ']);
+			rec['ZIP'] = cd['PARCEL LOCATION ZIP'];
+			rec['LOCATION'] = cd['PARCELLOCATION'];
 			cleanestData.push(rec);
 		});
 
