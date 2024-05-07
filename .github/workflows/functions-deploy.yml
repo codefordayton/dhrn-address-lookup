@@ -1,6 +1,11 @@
 name: DO functions deploy
 on: [push]
 jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
   Deploy:
     runs-on: ubuntu-latest
     steps:
@@ -8,4 +13,5 @@ jobs:
       uses: digitalocean/action-doctl@v2
       with:
         token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
-
+    - name: Deploy function
+      run: ls ${{ github.workspace }}
