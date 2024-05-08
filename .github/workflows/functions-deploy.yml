@@ -13,5 +13,5 @@ jobs:
       - name: Deploy function
         run: ls ${{ github.workspace }}
       - run: cd dhrn-functions
-      - run: doctl apps update
+      - run: doctl apps update <app id> 
 
