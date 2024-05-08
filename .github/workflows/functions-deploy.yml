@@ -13,5 +13,10 @@ jobs:
       - name: Deploy function
         run: ls ${{ github.workspace }}
       - run: cd dhrn-functions
-      - run: doctl serverless deploy dhrn-functions 
+      - name: Setup serverless
+        run: doctl serverless install      
+      - name: Connect to serverless
+        run: doctl serverless connect
+      - name: Deploy function
+        run: doctl serverless deploy . --remote-build
 
