@@ -22,7 +22,8 @@ def line_to_json(parts):
         "luc": parts['LUC'],
         "delqamount": parts['HLF1DELQ'],
         "zip": parts['ZIP'],
-        "address": parts['LOCATION']
+        "address": parts['LOCATION'],
+        "neighborhood": parts['NEIGHBORHOOD']
     }
 
 # function that searches a csv file for a passed string. partial matches are allowed.
