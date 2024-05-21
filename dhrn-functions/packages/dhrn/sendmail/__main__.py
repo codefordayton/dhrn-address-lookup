@@ -18,3 +18,4 @@ def main(args):
     )
     client = mt.MailtrapClient(token=MAILTRAP_API_TOKEN)
     client.send(mail)
+    return {"body": "Email sent"}
