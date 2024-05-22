@@ -6,7 +6,6 @@ def main(args):
     MAILTRAP_API_TOKEN = os.environ.get("MAILTRAP_API_TOKEN")
     MAILTRAP_SENDER_ADDRESS = os.environ.get("MAILTRAP_SENDER_ADDRESS") 
     MAILTRAP_TO_ADDRESS = os.environ.get("MAILTRAP_TO_ADDRESS")
-    print(args)
 
     with open("template.html") as f:
         template = Template(f.read())
@@ -21,4 +20,4 @@ def main(args):
     )
     client = mt.MailtrapClient(token=MAILTRAP_API_TOKEN)
     client.send(mail)
-    return {"body": "Email sent"}
+    return {"body": args}
