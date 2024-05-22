@@ -18,6 +18,11 @@ def main(args):
         html=template.render(data=args),
         category="Integration Test",
     )
-    client = mt.MailtrapClient(token=MAILTRAP_API_TOKEN)
-    client.send(mail)
+    try:
+        client = mt.MailtrapClient(token=MAILTRAP_API_TOKEN)
+        client.send(mail)
+    except mt.exceptions.AuthorizationError as e:
+        # Handle the authorization error here
+        return {"error": "Mailtrap authorization error {MAILTRAP_API_TOKEN}"}
+
     return {"body": args}
