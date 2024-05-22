@@ -23,6 +23,6 @@ def main(args):
         client.send(mail)
     except mt.exceptions.AuthorizationError as e:
         # Handle the authorization error here
-        return {"error": "Mailtrap authorization error {MAILTRAP_API_TOKEN}"}
+        return {"error": f"Mailtrap authorization error {MAILTRAP_API_TOKEN}", "body": args}
 
     return {"body": args}
