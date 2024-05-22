@@ -34,6 +34,9 @@ packages:
           web: true
           webSecure: false
           parameters: {}
-          environment: {}
+          environment:
+            MAILTRAP_API_KEY: "${MAILTRAP_API_KEY}"
+            MAILTRAP_SENDER_ADDRESS: "${MAILTRAP_SENDER_ADDRESS}"
+            MAILTRAP_TO_ADDRESS: "${MAILTRAP_TO_ADDRESS}"
           annotations: {}
           limits: {}
