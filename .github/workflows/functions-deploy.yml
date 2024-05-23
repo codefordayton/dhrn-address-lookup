@@ -21,6 +21,6 @@ jobs:
         run: doctl serverless deploy dhrn-functions
         env:
           MAILTRAP_API_KEY: ${{ secrets.MAILTRAP_API_KEY }}
-          MAILTRAP_SENDER_ADDRESS: ${{ MAILTRAP_SENDER_ADDRESS }}
-          MAILTRAP_TO_ADDRESS: ${{ MAILTRAP_TO_ADDRESS }}
+          MAILTRAP_SENDER_ADDRESS: ${{ secrets.MAILTRAP_SENDER_ADDRESS }}
+          MAILTRAP_TO_ADDRESS: ${{ secrets.MAILTRAP_TO_ADDRESS }}
 
