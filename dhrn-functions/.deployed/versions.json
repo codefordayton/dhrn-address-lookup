@@ -2,19 +2,24 @@
   {
     "apihost": "https://faas-nyc1-2ef2e6cc.doserverless.co",
     "namespace": "fn-72f50c41-0f6d-47f1-a509-bfc5cbc49013",
-    "packageVersions": {},
+    "packageVersions": {
+      "dhrn": {
+        "version": "0.0.34",
+        "digest": "f5cd5eb698be4272469e2480f0eac38a2f4eee90a0501d70bf7c43f446c2e73c"
+      }
+    },
     "actionVersions": {
       "dhrn/addresses": {
-        "digest": "d40dd377983ec6db99586883d88eb0325d701e0adda86c4147a2ef4597902c3e",
-        "version": "0.0.12"
+        "version": "0.0.27",
+        "digest": "e73d13bcf069468224f25b2fde7a019884dc2a3126c8cf9b7c9c2808b49ab0d1"
       },
       "dhrn/sendmail": {
-        "digest": "b56b0c61fa0f473f58007396f8b816aaba1c4ef291f30d004ac6cd5ddbc03be7",
-        "version": "0.0.4"
+        "version": "0.0.25",
+        "digest": "f74b9cefe04d00126a25fea75093f1fcc9a78ff47a86086dc59f65d664427e50"
       },
       "dhrn/zipcounty": {
-        "digest": "689c465bbfda923e66133fccc864d334301db420bd7a7c46d9906f682e73eb64",
-        "version": "0.0.4"
+        "version": "0.0.19",
+        "digest": "c56cdca3613c47e342766c42dfae478039383fd1a53d4f15a04cf0f9f1832d77"
       }
     }
   }
