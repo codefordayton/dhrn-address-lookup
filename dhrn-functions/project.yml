@@ -12,7 +12,6 @@ packages:
           main: ""
           runtime: python:default
           web: true
-          webSecure: false
           parameters: {}
           environment: {}
           annotations: {}
@@ -22,7 +21,6 @@ packages:
           main: ""
           runtime: python:default
           web: true
-          webSecure: false
           parameters: {}
           environment: {}
           annotations: {}
@@ -32,7 +30,6 @@ packages:
           main: ""
           runtime: python:default
           web: true
-          webSecure: false
           parameters: {}
           environment:
             MAILTRAP_API_KEY: "${MAILTRAP_API_KEY}"
