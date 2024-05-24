@@ -18,7 +18,7 @@ jobs:
       - name: Connect to serverless
         run: doctl serverless connect
       - name: Deploy function
-        run: doctl serverless deploy dhrn-functions
+        run: doctl serverless deploy dhrn-functions --remote-build
         env:
           MAILTRAP_API_TOKEN: ${{ secrets.MAILTRAP_API_TOKEN }}
           MAILTRAP_SENDER_ADDRESS: ${{ secrets.MAILTRAP_SENDER_ADDRESS }}
