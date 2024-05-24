@@ -32,7 +32,7 @@ packages:
           web: true
           parameters: {}
           environment:
-            MAILTRAP_API_KEY: "${MAILTRAP_API_KEY}"
+            MAILTRAP_API_TOKEN: "${MAILTRAP_API_TOKEN}"
             MAILTRAP_SENDER_ADDRESS: "${MAILTRAP_SENDER_ADDRESS}"
             MAILTRAP_TO_ADDRESS: "${MAILTRAP_TO_ADDRESS}"
           annotations: {}
