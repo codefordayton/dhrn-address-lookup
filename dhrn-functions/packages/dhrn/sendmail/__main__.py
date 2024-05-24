@@ -10,7 +10,7 @@ def main(args):
     with open("template.html") as f:
         template = Template(f.read())
 
-    filled_template = template.render(data=args)
+    filled_template = template.render(**args)
 
     mail = mt.Mail(
         sender=mt.Address(email=MAILTRAP_SENDER_ADDRESS, name="Code For Dayton"),
