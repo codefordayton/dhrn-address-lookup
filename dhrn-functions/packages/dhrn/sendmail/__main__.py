@@ -6,6 +6,7 @@ def main(args):
     MAILTRAP_API_TOKEN = os.environ.get("MAILTRAP_API_TOKEN")
     MAILTRAP_SENDER_ADDRESS = os.environ.get("MAILTRAP_SENDER_ADDRESS") 
     MAILTRAP_TO_ADDRESS = os.environ.get("MAILTRAP_TO_ADDRESS")
+    MAILTRAP_BCC_ADDRESS = os.environ.get("MAILTRAP_BCC_ADDRESS")
 
     with open("template.html") as f:
         template = Template(f.read())
@@ -15,6 +16,7 @@ def main(args):
     mail = mt.Mail(
         sender=mt.Address(email=MAILTRAP_SENDER_ADDRESS, name="Code For Dayton"),
         to=[mt.Address(email=MAILTRAP_TO_ADDRESS)],
+        bcc=[mt.Address(email=MAILTRAP_BCC_ADDRESS)],
         subject="New submission from the DHRN Screener",
         text="Please enable HTML to view this message",
         html=filled_template,
