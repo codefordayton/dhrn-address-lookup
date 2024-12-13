@@ -4,22 +4,22 @@
     "namespace": "fn-72f50c41-0f6d-47f1-a509-bfc5cbc49013",
     "packageVersions": {
       "dhrn": {
-        "version": "0.0.50",
+        "version": "0.0.55",
         "digest": "f5cd5eb698be4272469e2480f0eac38a2f4eee90a0501d70bf7c43f446c2e73c"
       }
     },
     "actionVersions": {
       "dhrn/addresses": {
-        "version": "0.0.40",
-        "digest": "05cdec9653b1bbc1bac3c2f408f18f22d07fba81b413dff78ee9fb3bbe2bb45f"
+        "version": "0.0.44",
+        "digest": "1d815b064048df8611e101bea36d6556183d8643775cefb054f070ea6352aa93"
       },
       "dhrn/sendmail": {
-        "version": "0.0.7",
-        "digest": "ed37a6c9bfc44a97ca11df70212a5cc01fb4dfcab7e157d6de3eca771e334e36"
+        "version": "0.0.18",
+        "digest": "40b35dffcfce49214034f7b69189a34f1ea028d11bd36762fd92ec06fe578179"
       },
       "dhrn/zipcounty": {
-        "version": "0.0.32",
-        "digest": "1800e52683795edad363b2d4c3fb0a33ef2dcbf5a226c73277b99a61863d589b"
+        "version": "0.0.36",
+        "digest": "bebb7370b6aea305c92bfc5d16aa918a8d2e731b78bfff6713e2269687a026a3"
       }
     }
   }
